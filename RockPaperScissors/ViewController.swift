@@ -64,11 +64,11 @@ class ViewController: NSViewController {
         
         switch result{
         case 0 :
-            resultStrint = "輸"
+            resultStrint = "loss"
         case 1 :
-            resultStrint = "贏"
+            resultStrint = "win"
         case 2 :
-            resultStrint = "平局"
+            resultStrint = "tie"
         default :
             break
         }
@@ -91,8 +91,8 @@ class ViewController: NSViewController {
             anotherString = "✋"
         }
         
-        lableUp.stringValue = "你" + resultStrint + "了!!"
-        lableDown.stringValue = "你出了" + statString + ",但電腦出了" + anotherString + "!"
+        lableUp.stringValue = "You" + resultStrint + "!"
+        lableDown.stringValue = "You" + statString + ",but computer" + anotherString + "!"
     }
 
 }
